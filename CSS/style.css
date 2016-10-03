@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Frenchpressfreefont';
+  src: url('fonts/Frenchpressfreefont.eot');
+  src: url('fonts/Frenchpressfreefont.eot') format('embedded-opentype'),
+       url('fonts/Frenchpressfreefont.woff2') format('woff2'),
+       url('fonts/Frenchpressfreefont.woff') format('woff'),
+       url('fonts/Frenchpressfreefont.ttf') format('truetype'),
+       url('fonts/Frenchpressfreefont.svg#Frenchpressfreefont') format('svg');
+}
+
+@font-face {
+  font-family: 'Champagne_Limousines';
+  src: url('fonts/Champagne_Limousines.eot');
+  src: url('fonts/Champagne_Limousines.eot') format('embedded-opentype'),
+       url('fonts/Champagne_Limousines.woff2') format('woff2'),
+       url('fonts/Champagne_Limousines.woff') format('woff'),
+       url('fonts/Champagne_Limousines.ttf') format('truetype'),
+       url('fonts/Champagne_Limousines.svg#Frenchpressfreefont') format('svg');
+
+}
+
+
+/********** BASIC STYLE ***********/
+
+*{
+  font-family: "Champagne_Limousines";
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+a:hover{
+  color:lightgrey;
+}
+
+header{
+  color:white;
+  text-align: left;
+  background: url("img/Untitled design (2).jpg") no-repeat bottom center;
+  background-size:cover;
+  height:100vh;
+}
+
+.wrapper{
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  color:grey;
+}
+
+/********** MAIN NAV ***********/
+
+.main-nav{
+  width: 90%;
+  color:white;
+  font-size:1.3em;
+  margin: auto;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo, .sign-in, .jobs{
+  margin-top: 10px;
+}
+
+.sign-in:hover{
+  background:rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding:5px;
+  color:grey;
+}
+
+
+/********** BANNER ***********/
+
+.banner{
+  width: 100%;
+  height:90%;
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+}
+
+.catch_phrase, .catch_explanation, .email{
+  align-self: center;
+}
+
+.catch_phrase{
+  margin-top:auto;
+  font-size: 3em;
+}
+
+.catch_explanation{
+  font-size:1.5em;
+  margin-bottom: 0;
+}
+
+.form{
+  display:flex;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+
+.email input{
+  color:grey;
+  background:rgba(255, 255, 255, 0.9);
+  box-shadow:  0 .5px 1px  rgba(0, 0, 0, 0.9);
+  border:2px solid white;
+  font-size: 1.6em;
+  height:40px;
+  width:250px;
+}
+
+.submit-button input{
+  background: #17a5e8;
+  box-shadow: 1px 0.5px 2px rgba(0, 0, 0, 0.9);
+  font-size: 1.4em;
+  color:white;
+  text-align: center;
+  border: none;
+  height:40px;
+  width:100px;
+}
+
+
+.email input:focus{
+  outline:none;
+  border:2px solid black;
+  background: rgba(0, 0, 0, 0.3);
+  color:white;
+}
+
+.submit-button input:hover{
+  outline:none;
+  color:white;
+  background-color:rgba(255, 255, 255, 0.3);
+}
+
+/********** BODY ***********/
+
+.concept, .how-it-works{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.concept{
+  height:100vh;
+}
+
+.concept h1, .how-it-works h1, .contact h1{
+  font-size:3em;
+}
+
+.concept p, .how-it-works p, .contact p{
+  font-size:1.5em;
+}
+
+
+/********** CONTACT ***********/
+
+.contact-wrapper{
+  width: 100%;
+  text-align: center;
+  color:grey;
+  background:rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom:1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom:20px;
+}
+
+.contact{
+  width: 90%;
+  margin:auto;
+  padding:3em 0;
+}
+
+.form-2{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-2 input{
+  text-align: center;
+  border:none;
+  box-shadow: 0 .5px 2px  rgba(0, 0, 0, 0.9);
+  outline:none;
+  width:200px;
+  height:35px;
+}
+
+.submit-button-2 input{
+  color:white;
+  box-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.9);
+  border:none;
+  background:#17a5e8;
+  width:75px;
+  height:35px;
+}
+
+/********** FOOTER ***********/
+
+.footer{
+  display:flex;
+  justify-content: flex-end;
+  background:#d9e4ea;
+  padding:2em 0;
+  margin:auto;
+}
+
+.copyright,.jobs-footer, .top{
+  color:grey;
+  margin:auto;
+}
